@@ -111,8 +111,9 @@ header nav a {
     /* display:inline-block; */
 }
 
-header nav a:hover {
+a:hover {
     color:#64a604;
+    /* transition:all 0.3s ease-in-out; */
 }
 
 a {
@@ -120,6 +121,8 @@ a {
     padding:10px;
     font-family: 'Raleway', sans-serif;
     padding:10px;
+    transition:all 0.3s ease-in-out;
+    color:grey;
 }
 
 /* MAIN STYLES */
@@ -137,6 +140,17 @@ button {
     background:#64a604;
     border:1px solid #64a604;
     padding:12px 20px;
+    transition:all 0.3s ease-in-out
+}
+
+button:hover {
+    background:#85d413;
+    border: 1px solid #85d413;
+}
+
+button:active {
+    background:#64a604;
+    border:1px solid #64a604;
 }
 
 button a {
@@ -148,7 +162,7 @@ hr {
     color:#64a604;
     background:#64a604;
     border:1px solid #64a604;
-    width:55px;
+    width:75px;
     height:1.5px;
     margin:20px auto 30px;
 }
@@ -187,6 +201,8 @@ hr {
 
 .recipes article:nth-child(2) {
     background:#f2f2f2;
+    padding:48px 10px;
+
 }
 
 article.recipesHalf {
@@ -198,9 +214,10 @@ article.recipesHalf {
     /* border:1px solid cyan; */
     width:90%;
     float: left;
-    margin:60px 0 42px 50px;
+    /* margin:40px 0 0 50px; */
     /* margin-top:87px;
     margin-left:50px; */
+    margin:5px 50px;
 }
 
 
@@ -211,6 +228,7 @@ article.recipesHalf {
     margin:22px 35px 0 0;
     float: left;
     font-size:1.3rem;
+    line-height:1;
     /* border:1px solid red; */
 }
 
@@ -344,7 +362,7 @@ section.clients {
 footer {
     background:#2e2e2e;
     color:#848484;
-    padding:5% 0;
+    padding:5% 0 0;
     /* border:1px solid red; */
 
 }
@@ -447,6 +465,26 @@ footer button i {
     font-size:1.5rem;
 }
 
+.credit {
+    clear:both;
+    width:100%;
+    background:#252525;
+    padding:5px 0;
+    font-size:1.3rem;
+    margin-top:30px;
+}
+
+.credit a {
+    color:#64a604;
+    padding:10px 0;
+    /* display:inline-block; */
+}
+
+.copyright {
+    width:70%;
+    margin:0 auto;
+}
+
 /* BLOG PAGE STYLES */
 
 header.blog {
@@ -474,7 +512,7 @@ header.blog {
 
 article.bottom a {
     /* border:1px solid orange; */
-    color:grey;
+    /* color:grey; */
     font-family:'Lora', serif;
     padding:5px 2px;;
 }
@@ -559,7 +597,6 @@ section.related.wrapper {
 .related a {
     /* border:1px solid green; */
     font-family:'Lora', serif;
-    color:dimgrey;
     padding-left:5px;
 }
 
@@ -663,6 +700,14 @@ section.comments {
     margin:0;
 }
 
+input {
+    font-family:'Lora', serif;
+}
+
+input:focus, .contactForm input:focus{
+    background:rgba(100,166,4,0.2);
+}
+
 .leaveComment input[type="text"], .leaveComment input[type="email"] {
     float: left;
     width:calc((100% - 40px) / 3);
@@ -755,6 +800,11 @@ aside ul, aside a {
 
 aside li {
     list-style:none;
+    padding:0 0 10px;
+}
+
+li p {
+    line-height:1;
 }
 
 aside h6 {
@@ -762,7 +812,19 @@ aside h6 {
     /* line-height:2; */
 }
 
+strong {
+    text-transform:uppercase;
+    font-family:'Raleway', sans-serif;
+}
+
 em {
     display:block;
+}
+
+.dragonFruitBG {
+    width:100%;
+    background:url(../assets/contact-2.jpeg);
+    height:60vh;
+    background-size:cover;
 }
 
