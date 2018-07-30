@@ -57,45 +57,50 @@
     <!-- HEADER ENDS -->
 
     <!-- MAIN STARTS -->
-    <main class="contact wrapper clearfix">
-        <section class="contactDetails">
-            <h3>Drop Us a Line</h3>
-            <form action="sendEmail.php" method="POST" class="myForm" autocomplete="off" name="myForm">
-                <input type="text" name="firstName" placeholder="Your Name" required="true">
-                <input type="email" name="emailAddress" placeholder="Your Email" required="true">
-                <input type="text" name="subjectName" placeholder="Subject">
-                <textarea name="specialInstructions" cols="30" rows="10"></textarea>
-                <a href="#">Send Message <i class="fas fa-long-arrow-alt-right"></i></a>
-            </form>
-        </section>
-    </main>
-    <!-- MAIN ENDS -->
+    <div class="wrapper clearfix">
+        <main class="contact">
+            <section class="contactForm">
+                <h4>Drop Us a Line</h4>
+                <form action="sendEmail.php" method="POST" class="myForm" autocomplete="off" name="myForm">
+                    <input type="text" name="firstName" placeholder="Your Name" required="true">
+                    <input type="email" name="emailAddress" placeholder="Your Email" required="true">
+                    <input type="text" name="subjectName" placeholder="Subject">
+                    <textarea name="specialInstructions" cols="30" rows="10"></textarea>
+                    <a href="#">Send Message <i class="fas fa-long-arrow-alt-right"></i></a>
+                </form>
+            </section>
 
-    <!-- ASIDE STARTS -->
-    <aside class="clearfix">
-        <div class="wrapper">
-            <h3>Contact Details</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis corrupti mollitia, dolorem rerum dolorum ratione nihil? Nobis aliquam sequi repellendus nulla quaerat cumque vel.
-            </p>
-            <h4>Working Hours</h4>
-            <h6>Mon - Fri :</h6>
-            <span>08:00am - 5:30pm</span>
-            <em>Not working on Saturday or Sunday!</em>
-            <ul>
-                <li>
-                    <p>A delicious restaurant</p>
-                    <p>Toronto, Ontario</p>
-                </li>
-                <li>
-                    <a href="mailto:yum@food.com">yum@food.com</a>
-                </li>
-                <li>
-                    <a href="tel:1234567890">+1 234 567 8910</a>
-                </li>
-            </ul>
-        </div>
-    </aside>
+        </main>
+        <!-- MAIN ENDS -->
+    
+        <!-- ASIDE STARTS -->
+        <aside>
+            <div class="wrapper">
+                <h4>Contact Details</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis corrupti mollitia, dolorem rerum dolorum ratione nihil? Nobis aliquam sequi repellendus nulla quaerat cumque vel.
+                </p>
+                <h5>Working Hours</h5>
+                <h6>Mon - Fri :</h6>
+                <span>08:00am - 5:30pm</span>
+                <em>Not working on Saturday or Sunday!</em>
+                <h5>Contact Info</h5>
+                <ul>
+                    <li>
+                        <p>A delicious restaurant</p>
+                        <p>Toronto, Ontario</p>
+                    </li>
+                    <li>
+                        <a href="mailto:yum@food.com">yum@food.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:1234567890">+1 234 567 8910</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- ASIDE ENDS -->
+    </div>
 
     <!-- FOOTER STARTS -->
     <footer>
