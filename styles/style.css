@@ -79,6 +79,7 @@ img {
 
 header {
     background:url(../assets/home-1.jpeg);
+    background-attachment:fixed;
     height:100vh;
 }
 
@@ -123,6 +124,24 @@ a {
     padding:10px;
     transition:all 0.3s ease-in-out;
     color:grey;
+}
+
+.circle {
+    /* border:1px solid rgb(155, 70, 84); */
+    background:#64a604;
+    width: 15px;
+    height:15px;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    font-size:1.1rem;
+    position: relative;
+    bottom:20px;
+    left:15px;  
+}   
+
+.circle p {
+    padding-top:3px;
 }
 
 /* MAIN STYLES */
@@ -181,6 +200,10 @@ hr {
     margin:0;
 }
 
+.recipes h5 {
+    line-height:1.5;
+}
+
 .recipesTop p {
     /* border:1px solid red; */
     margin:30px auto;
@@ -201,8 +224,12 @@ hr {
 
 .recipes article:nth-child(2) {
     background:#f2f2f2;
-    padding:48px 10px;
+    padding:55px 10px;
+}
 
+.recipes article:nth-child(2) p {
+    /* border:1px solid red; */
+    margin:0;
 }
 
 article.recipesHalf {
@@ -214,18 +241,15 @@ article.recipesHalf {
     /* border:1px solid cyan; */
     width:90%;
     float: left;
-    /* margin:40px 0 0 50px; */
-    /* margin-top:87px;
-    margin-left:50px; */
-    margin:5px 50px;
+    margin:0 50px;
 }
 
 
 .recipesHalf li {
-    width:calc(50% - 35px);
+    width:calc(50% - 60px);
     list-style:none;
     padding:0;
-    margin:22px 35px 0 0;
+    margin:9px 30px;
     float: left;
     font-size:1.3rem;
     line-height:1;
@@ -251,7 +275,8 @@ article.recipesHalf {
     font-family:'Font Awesome 5 Free';
     position: absolute;
     font-size:3rem;
-    left:-50px;
+    left:-45px;
+    top:5px;
     font-weight: 900;
 }
 
@@ -369,6 +394,7 @@ footer {
 
 footer h2 {
     color:#64a604;
+    line-height:1;
 }   
 
 footer h4 {
@@ -489,6 +515,7 @@ footer button i {
 
 header.blog {
     background:url(../assets/blog-1.jpeg);
+    /* background-attachment:fixed; */
     background-size:cover;
     height:60vh;
 }
@@ -731,6 +758,8 @@ textarea {
 
 header.contact {
     background:url(../assets/contact-1.jpeg);
+    background-size:cover;
+    background-attachment:fixed;
     height:75vh;
 }
 
