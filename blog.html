@@ -16,7 +16,7 @@
 
     <!-- HEADER STARTS -->
     <header class="blog">
-        <!-- <h1 class="invisibilityHidden">Delicious</h1> -->
+        <h1 class="visuallyhidden">Delicious</h1>
         <h2>Delicious</h2>
         <nav class="wrapper clearfix">
             <ul>
@@ -33,7 +33,7 @@
                     <a href="#">Nutrition</a>
                 </li>
                 <li>
-                    <a id="currentPage" href="blog.html#blog">Blog</a>
+                    <a href="blog.html#blog">Blog</a>
                 </li>
                 <li>
                     <a href="#">Shop</a>
@@ -119,16 +119,16 @@
     <section class="related wrapper clearfix">
         <h5>Related Posts</h5>
         <figure>
-            <img src="assets/blog-3.jpeg" alt="">
+            <img src="assets/blog-3.jpeg" alt="A woman is holding a pink and perfectly-iced cake on a stand.">
             <figcaption>
-                <h6>How to Bake the Perfect Cake</h6>
+                <h6> How to Bake the Perfect Cake</h6>
                 <span>July 11, 2018</span>
                 <span>by Admin</span>
                 <span>in <a href="#">Recipes</a></span>
             </figcaption>
         </figure>
         <figure>
-            <img src="assets/blog-4.jpeg" alt="">
+            <img src="assets/blog-4.jpeg" alt="Three cupcakes with plant-themed decorative icing.">
             <figcaption>
                 <h6>Floral Cupcakes</h6>
                 <span>July 19, 2018</span>
@@ -137,7 +137,7 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="assets/blog-5.jpeg" alt="">
+            <img src="assets/blog-5.jpeg" alt="Presumably smoked salmon on toast, topped with sliced onions, cilantro, chives, and sliced radish.">
             <figcaption>
                 <h6>Single Post with Image</h6>
                     <span>July 22, 2018</span>
@@ -152,7 +152,7 @@
     <section class="comments wrapper">
         <h5>02 Comments</h5>
         <div class="comment clearfix">
-            <img class="imgIcon" src="assets/blog-6.jpeg" alt="">
+            <img class="imgIcon" src="assets/blog-6.jpeg" alt="Picture of user used as an icon for a comment.">
             <div class="first">
                 <div class="quoteTriangle one"></div>
                 <div class="quoteTriangle two"></div>
@@ -164,7 +164,7 @@
 
         </div>
         <div class="comment clearfix">
-            <img class="imgIcon" src="assets/blog-7.jpeg" alt="">
+            <img class="imgIcon" src="assets/blog-7.jpeg" alt="Picture of user used as an icon for a comment.">
             <div class="second">
                 <div class="quoteTriangle one"></div>
                 <div class="quoteTriangle two"></div>
@@ -196,8 +196,7 @@
         <div class="wrapper clearfix"> 
             <div class="third">
                 <h2>Delicious</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos porro sit est saepe numquam dolorem nam deserunt,
-                    beatae impedit ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, asperiores.</p>
                 <ul>
                     <li>
                         <p>A delicious restaurant</p>
@@ -214,12 +213,12 @@
             <div class="third">
                 <h4>Recent Posts</h4>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit amet</li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                 </ul>
             </div>
             <div class="third">
@@ -267,7 +266,27 @@
     
     </body>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+    <script>
+        	$(function() {
+			console.log('crispy chicken wings');
+			$('.doctors a').on('click',function(){
+			$('figure').removeClass('open')
+      		$(this).next().addClass('open');
+   
+
+			});
+
+			$('a').smoothScroll({
+		
+
+			});
+            });
+        
     
+    
+    </script>
 
     
     </html>

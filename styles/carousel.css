@@ -77,7 +77,46 @@
       z-index: 3;
       opacity: 1;
     }
+  
+    section.clients {
+      background:#dded9a;
+      padding:10%;
   }
   
+  .clients article {
+      /* border:1px solid green; */
+      width: 60%;
+      margin:0 auto;
+      text-align:center;
+      position:relative;
+  }
+  
+  .clients p {
+      font-style:italic;
+      line-height:2;
+  }
+  
+  .clients blockquote::before, .clients blockquote::after {
+      font-size:7rem;
+      color:#eef6cd;
+      position: absolute;
+  }
+  
+  .clients blockquote::before {
+      content:'“';
+      top:60px;
+      left:-20px;
+  }
+  
+  .clients blockquote::after {
+      content:'”';
+      bottom:-50px;
+      right:0px;
+  }
+
+  a.arrow {
+    
+  }
+
   
   

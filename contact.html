@@ -16,7 +16,7 @@
 
     <!-- HEADER STARTS -->
     <header class="contact">
-        <!-- <h1 class="invisibilityHidden">Delicious</h1> -->
+        <h1 class="visuallyhidden">Delicious</h1>
         <h2>Delicious</h2>
         <nav class="wrapper clearfix">
             <ul>
@@ -39,7 +39,7 @@
                     <a href="#">Shop</a>
                 </li>
                 <li>
-                    <a id="currentPage" href="contact.html#contact">Contact</a>
+                    <a href="contact.html#contact">Contact</a>
                 </li>
                 <li>
                     <a href="#">
@@ -105,13 +105,13 @@
 
     <div class="dragonFruitBG"></div>
 
+    
     <!-- FOOTER STARTS -->
     <footer>
         <div class="wrapper clearfix"> 
             <div class="third">
                 <h2>Delicious</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos porro sit est saepe numquam dolorem nam deserunt,
-                    beatae impedit ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, asperiores.</p>
                 <ul>
                     <li>
                         <p>A delicious restaurant</p>
@@ -128,12 +128,12 @@
             <div class="third">
                 <h4>Recent Posts</h4>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit amet</li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                 </ul>
             </div>
             <div class="third">
@@ -168,17 +168,40 @@
                 </nav>
             </div>
         </div>
-        <!-- </div> -->
+
         <div class="credit">
-            <div class="copyright">
-                <p>Copyrights &copy; by <a href="#">POLAR</a>. All rights reserved.</p>
-
+                <div class="copyright">
+                    <p>Copyrights &copy; by <a href="#">POLAR</a>. All rights reserved.</p>
+    
+                </div>
             </div>
-        </div>
-    </footer>
-    <!-- FOOTER ENDS -->
+        </footer>
+        <!-- FOOTER ENDS -->
+    
+    
+    </body>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 
+    <script>
+        	$(function() {
+			console.log('crispy chicken wings');
+			$('.doctors a').on('click',function(){
+			$('figure').removeClass('open')
+      		$(this).next().addClass('open');
+   
 
-</body>
+			});
 
-</html>
+			$('a').smoothScroll({
+		
+
+			});
+            });
+        
+    
+    
+    </script>
+
+    
+    </html>
