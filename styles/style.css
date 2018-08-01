@@ -180,7 +180,6 @@ button a {
 }
 
 hr {
-    color:#64a604;
     background:#64a604;
     border:1px solid #64a604;
     width:75px;
@@ -226,7 +225,7 @@ hr {
 
 .recipes article:nth-child(2) {
     background:#f2f2f2;
-    padding:55px 10px;
+    padding:48px 10px;
 }
 
 .recipes article:nth-child(2) p {
@@ -245,7 +244,6 @@ article.recipesHalf {
     float: left;
     margin:0 50px;
 }
-
 
 .recipesHalf li {
     width:calc(50% - 60px);
@@ -348,7 +346,7 @@ article.recipesHalf {
 
 /* CLIENTS */
 
-section.carousel-wrapper {
+section.carouselWrapper {
     background:#dded9a;
     padding:15%;
     width:100%;
@@ -374,7 +372,6 @@ article.clients {
 
 .clients blockquote::before {
     content:'“';
-    /* top:60px; */
     /* left:20px; */
 }
 
@@ -851,7 +848,6 @@ li p {
 
 aside h6 {
     margin:0;
-    /* line-height:2; */
 }
 
 strong {
@@ -871,13 +867,14 @@ em {
 }
 
 /* CAROUSEL */
-.carousel-wrapper{
+.carouselWrapper{
     height:400px;
     position:relative;
     width:100%;;
     margin:0 auto;
   }
-.carousel-item{
+
+.carouselItem{
     position:absolute;
     top:0;
     bottom:0;
@@ -887,14 +884,14 @@ em {
     opacity:0;
     transition: all 0.5s ease-in-out;
   }
+
 .arrow {
     position:absolute;
     top:0;
     display:block;
     width:50px;
     height:100%;
-    -webkit-tap-highlight-color: rgba(255,255,255,1);
-    /* background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat; */
+    /* -webkit-tap-highlight-color: rgba(255,255,255,1); */
     background:url(../assets/angle-left-solid.svg) 50% 50% / 15px no-repeat;
     /* border:1px solid red; */
   }
@@ -906,9 +903,9 @@ em {
    
 .arrow-next{
     top:160px;
-      right:45%;
-      -webkit-transform: rotate(180deg);
-       transform: rotate(180deg);
+    right:45%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
   
 .light{
@@ -926,29 +923,29 @@ em {
       display: none;
 }
   
-.item-1 {
+.item1 {
       z-index: 2;
       opacity: 1;
       background:#dded9a;
 }
 
-.item-2{
+.item2{
       background:#dded9a;
 }
 
-.item-3{
+.item3{
       background:#dded9a;
 }
   
-*:target ~ .item-1 {
+*:target ~ .item1 {
       opacity: 0;
 }
   
-#item-1:target ~ .item-1 {
+#item1:target ~ .item1 {
       opacity: 1;
 }
   
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+#item2:target ~ .item2, #item3:target ~ .item3 {
       z-index: 3;
       opacity: 1;
 }
@@ -984,7 +981,3 @@ article.clients {
       right:40px;
       /* border:1px solid green; */
     }
-
-
-  
-  

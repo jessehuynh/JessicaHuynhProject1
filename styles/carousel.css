@@ -83,7 +83,7 @@
       padding:10%;
   }
   
-  .clients article {
+  article.clients {
       /* border:1px solid green; */
       width: 60%;
       margin:0 auto;
@@ -112,10 +112,6 @@
       content:'”';
       bottom:-50px;
       right:0px;
-  }
-
-  a.arrow {
-    
   }
 
   
